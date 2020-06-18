@@ -1,9 +1,23 @@
 <!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>You should not be here.</h1>
-  </body>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <form action='' name='myform' id="myform" method='POST'>
+    <input type='text' name='quizz' id="quizz">
+    <button action='submit'>Enter Quizz Answer</button>
+  </form>
+  <script src="jquery.js"></script>
+  <script>
+  // Shorthand for $(document).ready();
+  $(function() {
+   $('#myform').submit(function(){
+     var car = $('#cars').val();
+     $(this).attr('action', "https://thierryollivero.github.io/hansdieterin/" + quizz + ".html");
+   });
+  });
+ </script>
+</body>
 </html>
